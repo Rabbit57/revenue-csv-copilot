@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue CSV Copilot</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <aside class="controls">
+        <div class="brand">
+          <span class="brand-mark">RC</span>
+          <div>
+            <h1>Revenue CSV Copilot</h1>
+            <p>AI-style account risk report</p>
+          </div>
+        </div>
+
+        <section class="input-panel">
+          <div class="section-title">
+            <h2>CSV input</h2>
+            <button id="loadSample" type="button">Sample</button>
+          </div>
+
+          <textarea id="csvInput" spellcheck="false"></textarea>
+
+          <div class="option-grid">
+            <label>
+              Report mode
+              <select id="reportMode">
+                <option value="operator">Operator</option>
+                <option value="finance">Finance</option>
+                <option value="growth">Growth</option>
+              </select>
+            </label>
+            <label>
+              Risk threshold
+              <input id="riskThreshold" type="number" min="35" max="90" value="62" />
+            </label>
+          </div>
+
+          <div class="button-row">
+            <button id="analyze" class="primary" type="button">Analyze CSV</button>
+            <button id="downloadReport" class="secondary" type="button">Download report</button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="dashboard">
+        <header class="hero">
+          <p>Demo automation</p>
+          <h2>Turn messy customer revenue CSVs into a prioritized action report</h2>
+        </header>
+
+        <section class="stats" aria-label="Report metrics">
+          <article>
+            <span id="rowsMetric">0</span>
+            <p>Rows parsed</p>
+          </article>
+          <article>
+            <span id="riskMetric">$0</span>
+            <p>Revenue at risk</p>
+          </article>
+          <article>
+            <span id="billingMetric">0</span>
+            <p>Billing issues</p>
+          </article>
+          <article>
+            <span id="expansionMetric">0</span>
+            <p>Expansion leads</p>
+          </article>
+        </section>
+
+        <section class="layout">
+          <article class="report-panel">
+            <div class="section-title">
+              <h3>Generated report</h3>
+              <span id="reportStatus">Ready</span>
+            </div>
+            <div id="reportOutput" class="report-output"></div>
+          </article>
+
+          <article class="table-panel">
+            <div class="section-title">
+              <h3>Account actions</h3>
+              <span id="actionCount">0 accounts</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Account</th>
+                    <th>Risk</th>
+                    <th>Signal</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="accountRows"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>

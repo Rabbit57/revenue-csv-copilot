@@ -1,0 +1,11 @@
+account,plan,mrr,invoice_status,days_overdue,usage_percent,last_login_days,support_tickets,renewal_days,owner
+Nimbus Foods,Growth,1850,paid,0,91,2,1,44,Ava
+Vertex Bio,Enterprise,6400,overdue,18,74,5,4,21,Mateo
+CraftDesk,Starter,79,paid,0,18,43,0,120,Lina
+Signal Forge,Growth,2400,failed,35,66,12,6,15,Ava
+BrightCart,Growth,1320,paid,0,104,1,2,67,Noah
+LegalNorth,Enterprise,8100,paid,0,22,31,3,29,Mateo
+PaperTrail,Starter,149,overdue,9,87,4,1,88,Lina
+OmniField,Enterprise,5600,paid,0,97,3,0,11,Noah
+Loopline,Growth,980,failed,41,13,38,7,9,Ava
+RentPilot,Starter,199,paid,0,112,1,0,150,Lina
