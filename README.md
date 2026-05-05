@@ -8,7 +8,7 @@ A browser-only AI-style demo that turns account revenue CSV data into a prioriti
 
 ## Why this demo exists
 
-This is a compact portfolio piece for selling fixed-scope AI data automation work. It shows how a buyer can move from raw CSV to useful decisions without a meeting:
+This is a compact portfolio piece showing how raw CSV data can become a useful operating dashboard. It shows how a buyer can move from raw CSV to useful decisions without a meeting:
 
 - paste or load customer/account CSV data
 - classify billing, churn, adoption, support, and expansion signals
